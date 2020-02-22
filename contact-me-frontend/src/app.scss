@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$contact-bg: #181818;
+
+.contact-me-component {
+    background-color: $contact-bg;
+    min-height: 100vh;
+}

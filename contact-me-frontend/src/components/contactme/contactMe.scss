@@ -1,0 +1,121 @@
+// font family for form
+$form-text-ff: 'Raleway', sans-serif;
+
+// Text field colours
+$text-bg: #2F2F2F;
+$text-border: #646464;
+$text-color: #8E8E8E;
+$brandingGreen: #4DB33D;
+$brandingGreenOpaque: rgba(67,153,52,0.7);
+
+.contact-container {
+    text-align: center;
+}
+
+.field-error {
+    border: 1px solid red;
+}
+
+.icon-alert {
+    color: red;
+    font-size: 24pt;
+    right: 1.5vw;
+    margin-top: 37px;
+    position: absolute;
+}
+
+.icon-hidden {
+    display: none;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-text-field {
+    height: 64px;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    background-color: $text-bg;
+    font-size: 36px;
+    border: $text-border solid 1px;
+}
+
+.field-error {
+    height: 64px;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    background-color: $text-bg;
+    font-size: 36px;
+    border: red solid 1px;
+}
+
+.contact-message-field
+{
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    background-color: $text-bg;
+    border: $text-border solid 1px;
+}
+
+.form-label
+{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    color: #8E8E8E;
+}
+
+#contact-header {
+    color: white;
+    font-size: 28pt;
+    font-family: 'Sulphur Point', sans-serif;
+    padding: 6% 0 5% 0;
+}
+
+#contact-submit {
+    background-color: transparent;
+    border: solid $brandingGreen 1px;
+    padding: 5px 10px 5px 10px; 
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color: $text-color;
+    margin-top: 20pt;
+    margin-bottom: 5vh;
+
+    &:hover {
+        transition-duration: 0.5s;
+        background-color: $brandingGreenOpaque;
+        cursor: pointer;
+    }
+}
+
+.contact-modal {
+    position: fixed;
+    top: 25vh;
+    left: 80vh;
+    right: 80vh;
+    bottom: 25vh;
+    padding:3vh;
+    background-color: white;
+    border-radius: 2%;
+    min-height: 40vh;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+
+  .contact-submit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+  }
